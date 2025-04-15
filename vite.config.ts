@@ -6,4 +6,9 @@ import tsconfigPaths from "vite-tsconfig-paths";
 export default defineConfig({
   base: "/",
   plugins: [react(), tsconfigPaths()],
+  preview: {
+    port: process.env.PORT ? parseInt(process.env.PORT) : 4173,
+    host: "0.0.0.0",
+    allowedHosts: ["healthcheck.railway.app"],
+  },
 });
