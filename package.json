@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint -c .eslintrc.json ./src/**/**/*.{ts,tsx} --fix",
-    "preview": "serve -s dist"
+    "preview": "serve -s dist -l $PORT"
   },
   "dependencies": {
     "@heroui/button": "2.2.17",
